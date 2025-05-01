@@ -17,9 +17,9 @@ const MusicResult = ({ result }: MusicResultProps) => {
   if (!result) return null;
 
   return (
-    <Card className="w-full max-w-md bg-blur border-none shadow-lg">
+    <Card className="w-full max-w-md neo-blur border-none shadow-lg">
       <CardHeader className="pb-2">
-        <CardTitle className="text-2xl font-bold">Música encontrada!</CardTitle>
+        <CardTitle className="text-2xl font-bold text-gradient">Música encontrada!</CardTitle>
       </CardHeader>
       <CardContent className="flex items-center gap-4">
         <div className={cn("h-20 w-20 rounded-md overflow-hidden flex items-center justify-center music-gradient")}>
@@ -34,10 +34,10 @@ const MusicResult = ({ result }: MusicResultProps) => {
           )}
         </div>
         <div className="flex-1">
-          <h3 className="font-bold text-xl line-clamp-1">{result.title}</h3>
-          <p className="text-muted-foreground">{result.artist}</p>
+          <h3 className="font-bold text-xl line-clamp-1 text-white">{result.title}</h3>
+          <p className="text-gray-300">{result.artist}</p>
           {result.album && (
-            <p className="text-sm text-muted-foreground">{result.album}</p>
+            <p className="text-sm text-gray-400">{result.album}</p>
           )}
         </div>
       </CardContent>

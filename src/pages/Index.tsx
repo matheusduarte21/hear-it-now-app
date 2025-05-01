@@ -38,12 +38,12 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50">
+    <div className="min-h-screen bg-gradient-to-br from-zinc-900 to-slate-800">
       <div className="container max-w-4xl px-4 py-12">
         <header className="mb-16 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Headphones className="h-10 w-10 text-hearNew-purple" />
-            <h1 className="text-4xl font-bold">hear<span className="text-hearNew-purple">New</span></h1>
+            <h1 className="text-4xl font-bold text-white">hear<span className="text-hearNew-purple">New</span></h1>
           </div>
           <p className="text-xl text-muted-foreground">
             Descubra qualquer música instantaneamente
@@ -56,7 +56,7 @@ const Index = () => {
               onRecordStart={handleRecordStart} 
               onRecordEnd={handleRecordEnd} 
             />
-            <p className="text-lg font-medium">
+            <p className="text-lg font-medium text-gray-300">
               {isListening 
                 ? "Ouvindo..." 
                 : "Toque para reconhecer música"}
